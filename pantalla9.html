@@ -13,19 +13,26 @@
         <section class="container-fluid py-3 sticky-top" id="estatus_corrida">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-12 col-lg-12 d-flex align-items-center justify-content-center">
-                        <img src="assets/images/corrida-off.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14">Elegir corrida</span>
+                    <div class="col-12 col-lg-12 ">
+                        <div class="row">
+                            <div class="col-12 col-sm-8 col-md-8 col-lg-8 d-flex align-items-center justify-content-center">
+                                <img src="assets/images/corrida-off.png" class="img-fluid mr-2" alt="">
+                                <span class="txt14">Elegir corrida</span>
+                                <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                                <img src="assets/images/asientos-on.png" class="img-fluid mr-2" alt="">
+                                <span class="txt14 text-muted2">Asientos y datos</span>
+                                <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
+                                <img src="assets/images/pago-off.png" class="img-fluid mr-2" alt="">
+                                <span class="txt14 text-muted2">Pago</span>
+                            </div>
+                            
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-center pt-2 pt-sm-2 pt-md-0 pt-lg-0">
+                                <img src="assets/images/reloj.png" class="img-fluid mr-2" alt="" style="width: 30px;">
+                                <span class="txt12 fdark1">Tiempo restante</span>
+                                <span class="fred titles18 ml-1">00:00</span>
+                            </div>
+                        </div>
                         
-                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
-                        
-                        <img src="assets/images/asientos-on.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14 text-muted2">Asientos y datos</span>
-                        
-                        <img src="assets/images/separador.png" class="separador img-fluid mx-2 mx-sm-2 mx-md-2 mx-2 my-2 my-sm-2 my-md-0 my-lg-0" alt="">
-                        
-                        <img src="assets/images/pago-off.png" class="img-fluid mr-2" alt="">
-                        <span class="txt14 text-muted2">Pago</span>
                     </div>
                 </div>
             </div>
@@ -90,7 +97,7 @@
                             <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row mr-4" data-aos="fade-down" data-aos-duration="1400">
                                 <div class="bullets-asientos disp mr-2"></div> Disponible
                             </div>
-                            <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row mr-4 text-center" data-aos="fade-up" data-aos-duration="1700">
+                            <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row mr-4" data-aos="fade-up" data-aos-duration="1700">
                                 <div class="bullets-asientos nodisp mr-2"></div> No disponible
                             </div>
                             <div class="d-flex align-items-center justify-content-start flex-column flex-sm-row flex-md-row flex-lg-row" data-aos="fade-down" data-aos-duration="2000">
@@ -100,20 +107,53 @@
                     </div>
                     
                     <div class="col-12 text-center">
-                        <img src="assets/images/asientos.png" class="img-fluid w-100" alt="">
+                        <img src="assets/images/asientos-select.png" class="img-fluid w-100" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
         
-        <!-- Registro Pasajeros -->
+        <!-- Enviar tus boletos -->
         <section class="container-fluid mb-5">            
             <div class="container-lg" id="registro_pasajeros">
-                <h5 class="fblack titles24 my-5">Registra a tu(s) pasajero(s)</h5>
+                <h5 class="fblack titles24 my-5">Enviar tu(s) boletos(s)</h5>
+                <div class="row gray2back shadow p-3 p-sm-3 p-md-5 p-lg-5 rounded-lg">                    
+                    <div class="col-12">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-lg-6">
+                                    <label for="email" class="txt16 f700 fblack mb-2">Correo electrónico o celular</label>
+                                    <input type="email" class="form-control fblack txt18 shadow-none is-invalid" id="email" placeholder="Ej: mario@correo.com ó 5512234556">
+                                </div>
+                                <div class="form-group col-lg-6">
+                                    <label for="email" class="txt16 f700 fblack mb-2">Confirmar correo electrónico o celular</label>
+                                    <input type="text" class="form-control fblack txt18 shadow-none is-valid" id="email" placeholder="Ej: mario@correo.com ó 5512234556">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Registra a tus pasajeros -->
+        <section class="container-fluid mb-5">            
+            <div class="container-lg" id="registro_pasajeros">
+                <div class="row my-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <h5 class="fblack titles24">Registra a tu(s) pasajero(s)</h5>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-left text-sm-left text-md-right text-lg-right">
+                        <a href="" data-toggle="modal" data-target="#modalAsistencia" class="txt18 f700 fgreen2">
+                            ¿Qué es la asistencia total? <img src="assets/images/info.png" class="img-fluid" alt="">
+                        </a>   
+                    </div>
+                </div>
                 <div class="row gray2back shadow p-3 p-sm-3 p-md-5 p-lg-5 rounded-lg">
                     <div class="col-12">
-                        <span class="txt18 fblack text-left">Pasajero 1: <b>Adulto</b></span>
+                        <span class="txt18 fblack text-left">Pasajero 1: <strong>Adulto</strong></span>
+                        <span class="txt18 fblack text-left ml-4">Asiento de ida: <strong>17</strong></span>
                         <hr class="mt-2">
                     </div>
                     
@@ -128,30 +168,28 @@
                                     <label for="apellidos" class="txt16 f700 fblack mb-2">Apellido(s)</label>
                                     <input type="text" class="form-control fblack txt18 shadow-none" id="apellidos" placeholder="Ej: Torres Gómez">
                                 </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="email" class="txt16 f700 fblack mb-2">Correo electrónico o celular</label>
-                                    <input type="text" class="form-control fblack txt18 shadow-none is-invalid" id="email" placeholder="Ej: mario@correo.com ó 5512234556">
-                                </div>
-                                <div class="form-group col-lg-6">
-                                    <label for="email" class="txt16 f700 fblack mb-2">Confirmar correo electrónico o celular</label>
-                                    <input type="text" class="form-control fblack txt18 shadow-none is-valid" id="email" placeholder="Ej: mario@correo.com ó 5512234556">
-                                </div>
-                                <div class="form-group col-12 helpform py-1 px-3 txt18">
-                                    Ingresa tu nombre completo y proporciona un correo o número celular para enviarte tus boletos. 
-                                </div>
-                                <div class="form-group col-12 col-lg-6" data-aos="zoom-in" data-aos-duration="1700">
-                                    <a href="" data-toggle="modal" data-target="#modalAsistencia" class="txt18 f700 fgreen2">
-                                        ¿Qué es la asistencia total? <img src="assets/images/info.png" class="img-fluid" alt="">
-                                    </a>                                    
-                                </div>
-                                <div class="form-group col-12 col-lg-6 d-flex flex-column flex-sm-row flex-md-row flex-lg-row align-items-center justify-content-start justify-content-sm-start justify-content-md-start justify-content-lg-end" data-aos="fade-up" data-aos-duration="1600">
+                               
+                                <div class="form-group col-12 col-lg-6 d-flex flex-column flex-sm-row flex-md-row flex-lg-row align-items-start justify-content-start justify-content-sm-start justify-content-md-start justify-content-lg-start" data-aos="fade-up" data-aos-duration="1600">
                                     <span class="fblack txt18 f700 f18 mr-2">Agregar asistencia total</span>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input custom-control-input-lg" id="asistenciatotal" checked>
                                         <label class="custom-control-label pl-2" for="asistenciatotal">Ida $15.00 MXN</label>
                                     </div>
                                 </div>
-                                <hr class="w-100">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="container-fluid mb-5">            
+            <div class="container-lg" id="registro_pasajeros">
+                <div class="row gray2back shadow p-4 rounded-lg">                                      
+                    <div class="col-12">
+                        <form action="">
+                            <div class="form-row">                                
                                 <div class="form-group col-12 d-flex align-items-center justify-content-start mt-3" data-aos="fade-down" data-aos-duration="1400">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input custom-control-input-lg" id="okterminos" checked>
@@ -169,17 +207,26 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 mb-sm-0 mb-md-0 mb-lg-0">
-                        <a href="pantalla2.html" class="btn btn-white w-100 py-4 titles24 shadow-none">Regresar</a>
+                        <a href="pantalla3.html" class="btn btn-white w-100 py-4 titles24 shadow-none">Regresar</a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <a href="pantalla4.html" class="btn btn-gray w-100 py-4 titles24 shadow-none">Continuar</a>
+                        <a href="pantalla6.html" class="btn btn-green w-100 py-4 titles24 shadow-none">Pagar</a>
                     </div>
                 </div>
             </div>
         </footer>
+        
+        
+        <!-- Eliminar este bloque, ya que son los accesos directos para los popups de error -->
+        <div class="container-lg text-center mb-5">
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error1">Error 1</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error2">Error 2</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#error3">Error 3</button>
+        </div>
+        <!-- -->
 
         
-        <!-- Modal -->
+        <!-- Modal Asistencia total -->
         <div class="modal fade" id="modalAsistencia" tabindex="-1" aria-labelledby="modalAsistenciaLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content p-5 rounded-lg">
@@ -205,6 +252,83 @@
                                         
                     <div class="modal-footer border-0">
                         <button type="button" class="btn btn-purple w-100 py-4 txt24 shadow-none" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 1 -->
+        <div class="modal fade" id="error1" tabindex="-1" aria-labelledby="error1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 2 -->
+        <div class="modal fade" id="error2" tabindex="-1" aria-labelledby="error2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                        
+                        <button type="button" class="btn btn-purple w-100 txt24 py-3 my-3" data-dismiss="modal">
+                            Continuar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Error 3 -->
+        <div class="modal fade" id="error3" tabindex="-1" aria-labelledby="error3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="assets/images/warning.png" class="img-fluid mb-3" alt="">
+                        <h5 class="titles32 fblack mb-3">Título del mensaje</h5>
+                        <p class="txt18 fblack">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam aliquet felis eu commodo dignissim vestibulum ac blandit enim
+                        </p>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-white w-100 txt24 py-3 my-3" data-dismiss="modal">
+                                    Cancelar
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-purple w-100 txt24 py-3 my-3" data-dismiss="modal">
+                                    Continuar
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

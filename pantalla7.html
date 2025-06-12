@@ -7,6 +7,22 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <title>Taquilla reversible</title>
+        <style>
+            #sigue_tu_viaje .card{
+                border: none !important;
+                border-radius: 20px;
+            }
+            #sigue_tu_viaje .card-header{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            #sigue_tu_viaje .logo-ado{
+                width: 100px;
+            }
+            .qr-pase{
+                width: 30px;
+            }
+        </style>
     </head>
     
     <body>
@@ -95,23 +111,17 @@
                     </div>
                 </div>
             </div>
+        </div>    
+        
+        <!-- Pase de abordar -->
+        <div class="container-fluid mt-5">
+            <div class="container-lg px-0">
+                <a href="pantalla8.html" class="btn btn-purple w-100 py-4 titles24 shadow-none d-flex align-items-center justify-content-center">
+                    <img src="assets/images/QR.png" class="img-fluid qr-pase mr-2" alt=""> Pase de abordar
+                </a>
+            </div>
         </div>
-        
-        <style>
-            #sigue_tu_viaje .card{
-                border: none !important;
-                border-radius: 20px;
-            }
-            #sigue_tu_viaje .card-header{
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-            }
-            #sigue_tu_viaje .logo-ado{
-                width: 100px;
-            }
-        </style>
-        
-        
+             
         <!-- Sigue tu viaje -->
         <div class="container-fluid my-5">
             <div class="container-lg p-5" id="sigue_tu_viaje">

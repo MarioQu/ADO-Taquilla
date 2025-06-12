@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Taquilla reversible</title>
+        <style>
+            .light-font{
+                font-family: 'GothamPro-Light';
+            }
+            .cont-border-bottom {
+                border-bottom: 1px solid #B5BAC7;
+            }
+            .card-pase{
+                border-radius: 40px;
+                padding: 48px;
+                border: 1px solid #B5BAC7;
+                background-color: #ECEFF6;
+                border-bottom: 40px solid #E11F2A;
+            }
+            .back-qr-pase{
+                border-radius: 16px;
+            }
+            
+            /* Slick */
+            .slick-dots {
+                bottom: -60px;
+            }
+            .slick-dots li button {
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                background: #5F2167;
+                opacity: .5;
+                border-radius: 50%;
+            }
+            .slick-dots li.slick-active button{
+                opacity: 1;
+            }
+            .slick-arrow {
+                z-index: 1;
+                width: 70px;
+                height: 70px;
+            }
+            .slick-prev, .slick-next {
+                top: 105%;
+            }
+            .slick-next {
+                right: 0;
+                background-image: url("assets/images/right.png") !important;
+                background-size: 70px;
+                background-position: center !important;
+                background-repeat: no-repeat;
+                margin-right: 40%;
+            }
+            .slick-prev {
+                left: 0;
+                background-image: url("assets/images/left.png") !important;
+                background-size: 70px;
+                background-position: center !important;
+                background-repeat: no-repeat;
+                margin-left: 40%;
+            }
+            .slick-next:before,
+            .slick-prev:before{
+                content: " " !important;
+            }
+            
+            @media(max-width: 767px){
+                .head-logo{
+                    display: block;
+                    margin: 0px auto;
+                }
+                .slick-prev, .slick-next {
+                    top: 104%;
+                }
+                .slick-next {
+                    margin-right: 20%;
+                }
+                .slick-prev {
+                    margin-left: 20%;
+                }
+            }
+            @media(min-width: 768px) and (max-width: 992px){
+                .slick-next {
+                    margin-right: 30%;
+                }
+                .slick-prev {
+                    margin-left: 30%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body class="pb-5 mb-5">
+        <section class="container-fluid pt-5 pb-4">
+            <div class="container-lg cont-border-bottom">
+                <div class="row" data-aos="fade-right" data-aos-duration="1600">
+                    <div class="col-8 text-left">
+                        <h1 class="fblack titles24">Pase de abordar</h1>
+                    </div>
+                    <div class="col-4 text-right">
+                        <p class="mb-0 pb-0 txt24">1 de 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div id="slick-carrusel">
+                <!-- item -->
+                <div>
+                    <div class="px-3">
+                        <div class="container card-pase">
+                            <div class="row cont-border-bottom pb-5">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="assets/images/ADO.png" alt="" class="head-logo">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-sm-center text-md-right text-lg-right">
+                                    <span class="fdark1 txt18 light-font">Fecha:</span>
+                                    <p class="p-0 m-0 txt24 fdark1">Vier. 30 de ago.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row py-4 cont-border-bottom">
+                                <div class="col-12 mb-4">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Corrida: <br></span>
+                                        <span class="txt24 fdark1">123456789</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <h2 class="titles40 fdark1">México, TAPO</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Salida:</span><br>
+                                        <span class="txt24 fdark1">06:00 h</span>
+                                    </p>
+                                </div>
+                                <div class="pt-5 pt-sm-5 pt-md-0 pt-lg-0 col-12 col-sm-12 col-md-6 text-left text-sm-left text-md-right text-lg-right">
+                                    <h2 class="titles40 fdark1">Puebla CAPU</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Llegada:</span><br>
+                                        <span class="txt24 fdark1">08:10 h</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="col-12 py-5">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Pasajero:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt32 fdark1">Jimena Vinat Legorreta</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Asiento:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">24</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Tipo:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">Adulto</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <div class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 whiteback back-qr-pase">
+                                    <img src="assets/images/qr-big.png" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- item -->
+                
+                <!-- item -->
+                <div>
+                    <div class="px-3">
+                        <div class="container card-pase">
+                            <div class="row cont-border-bottom pb-5">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="assets/images/ADO.png" alt="" class="head-logo">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-sm-center text-md-right text-lg-right">
+                                    <span class="fdark1 txt18 light-font">Fecha:</span>
+                                    <p class="p-0 m-0 txt24 fdark1">Vier. 30 de ago.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row py-4 cont-border-bottom">
+                                <div class="col-12 mb-4">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Corrida: <br></span>
+                                        <span class="txt24 fdark1">123456789</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <h2 class="titles40 fdark1">México, TAPO</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Salida:</span><br>
+                                        <span class="txt24 fdark1">06:00 h</span>
+                                    </p>
+                                </div>
+                                <div class="pt-5 pt-sm-5 pt-md-0 pt-lg-0 col-12 col-sm-12 col-md-6 text-left text-sm-left text-md-right text-lg-right">
+                                    <h2 class="titles40 fdark1">Puebla CAPU</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Llegada:</span><br>
+                                        <span class="txt24 fdark1">08:10 h</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="col-12 py-5">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Pasajero:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt32 fdark1">Jimena Vinat Legorreta</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Asiento:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">24</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Tipo:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">Adulto</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <div class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 whiteback back-qr-pase">
+                                    <img src="assets/images/qr-big.png" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- item -->
+                                
+                <!-- item -->
+                <div>
+                    <div class="px-3">
+                        <div class="container card-pase">
+                            <div class="row cont-border-bottom pb-5">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <img src="assets/images/ADO.png" alt="" class="head-logo">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center text-sm-center text-md-right text-lg-right">
+                                    <span class="fdark1 txt18 light-font">Fecha:</span>
+                                    <p class="p-0 m-0 txt24 fdark1">Vier. 30 de ago.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row py-4 cont-border-bottom">
+                                <div class="col-12 mb-4">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Corrida: <br></span>
+                                        <span class="txt24 fdark1">123456789</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <h2 class="titles40 fdark1">México, TAPO</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Salida:</span><br>
+                                        <span class="txt24 fdark1">06:00 h</span>
+                                    </p>
+                                </div>
+                                <div class="pt-5 pt-sm-5 pt-md-0 pt-lg-0 col-12 col-sm-12 col-md-6 text-left text-sm-left text-md-right text-lg-right">
+                                    <h2 class="titles40 fdark1">Puebla CAPU</h2>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Llegada:</span><br>
+                                        <span class="txt24 fdark1">08:10 h</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="col-12 py-5">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Pasajero:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt32 fdark1">Jimena Vinat Legorreta</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Asiento:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">24</span>
+                                    </p>
+                                </div>
+                                <div class="col-6 text-left">
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="light-font">Tipo:</span><br>
+                                    </p>
+                                    <p class="p-0 m-0 txt18 fdark1">
+                                        <span class="txt24 fdark1">Adulto</span>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-5">
+                                <div class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 whiteback back-qr-pase">
+                                    <img src="assets/images/qr-big.png" class="img-fluid d-block mx-auto" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- item -->
+              </div>
+        </section><br><br><br>
+        
+        
+        <footer class="container-fluid mt-5 pt-3 pb-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 mb-3 mb-sm-0 mb-md-0 mb-lg-0">
+                        <a href="pantalla7.html" class="btn btn-white w-100 py-4 titles24 shadow-none">Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+       
+            
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            AOS.init();
+            
+            $(document).ready(function(){
+                $('#slick-carrusel').slick({
+                    centerMode: true,
+                    centerPadding: '120px',
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: true,
+                    
+                    responsive: [
+                        {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: true,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                        }
+                    ]
+                });
+                
+                
+            });
+            
+            
+        </script>
+    </body>
+</html>
