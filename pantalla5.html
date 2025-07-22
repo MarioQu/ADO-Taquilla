@@ -179,7 +179,7 @@
                         <a href="pantalla3.html" class="btn btn-white w-100 py-4 titles24 shadow-none">Regresar</a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <a href="pantalla6.html" class="btn btn-green w-100 py-4 titles24 shadow-none">Pagar</a>
+                        <a href="pantalla6.html"  id="pagar" class="btn btn-green w-100 py-4 titles24 shadow-none">Pagar</a>
                     </div>
                 </div>
             </div>
@@ -309,6 +309,40 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+            
+            $('#pagar').click(function() {
+                dataLayer.push({ ecommerce: null });
+
+                dataLayer.push({
+                event: "add_to_cart",
+                ecommerce: {
+                    currency: "MXN",
+                    value: 400,
+                    items: [
+                    {
+                    item_id: "63-205",
+                    item_name: "México Tapo-Puebla CAPU",
+                    affiliation: "ADO Taquilla Digital",
+                    coupon: "BUENFINADO",
+                    discount: 100.00,
+                    index: 1,
+                    item_brand: "AU",
+                    item_category: "Ida",
+                    item_category2: "Adulto",
+                    item_category3: "México Tapo",
+                    item_category4: "Puebla CAPU",
+                    item_category5: "25/06/2025 09:00:00",
+                    item_category6: "25/06/2025 15:10:00",            
+                    price: 500​,
+                    quantity: 1
+                    }
+                    ]
+                }
+                });
+
+                window.location.href = "/pantalla6";
+            
+            });
         </script>
     </body>
 </html>
