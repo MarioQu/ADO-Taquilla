@@ -1,18 +1,18 @@
 @font-face {
-    font-family: 'GothamPro';
-    src: url('../fonts/gothampro.ttf');
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf');
 }
 @font-face {
-    font-family: 'GothamPro-Light';
-    src: url('../fonts/gothampro_light.ttf');
+    font-family: 'Montserrat-Light';
+    src: url('../fonts/Montserrat-Light.ttf');
 }
 @font-face {
-    font-family: 'GothamPro-Bold';
-    src: url('../fonts/gothampro_bold.ttf');
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
 }
 @font-face {
-    font-family: 'GothamPro-Black';
-    src: url('../fonts/gothampro_black.ttf');
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.ttf');
 }
 
 
@@ -20,6 +20,7 @@
     border: 1px dashed #00ffff !important;
 }
 body{
+    font-family: 'Montserrat-Regular';
     background-color: #FAFBFD;
 }
 a{
@@ -50,49 +51,49 @@ a{
 
 /* ---------- Tipografía ---------- */
 .titles18{
-    font-family: 'GothamPro-Bold';
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 .titles24{
-    font-family: 'GothamPro-Bold';
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 .titles32{
-    font-family: 'GothamPro-Bold';
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     font-size: 32px;
 }
 .titles40{
-    font-family: 'GothamPro-Bold';
+    font-family: 'Montserrat-Bold', Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
 .txt12{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 .txt14{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 .txt16{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 .txt18{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 .txt20{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 24px;
 }
 .txt24{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 24px;
     line-height: 28px;
 }
 .txt32{
-    font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat-Regular', Arial, Helvetica, sans-serif;
     font-size: 32px;
     line-height: 36px;
 }
